@@ -1,0 +1,361 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #222222; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.login-container {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;    
+   border-radius: 40px;
+    display: flex;
+    
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+ 
+.visual-section {
+    flex: 1; 
+    background-image: url('../images/Mask\ group.png'); 
+    background-color: #e3d2c3; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px; 
+    position: relative;
+    width: 736px;
+    height: 963px;
+    top: 28px;
+    left: 26px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 60px; 
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-text h2 {
+    color: #a05939;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4); 
+}
+
+.form-section {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+   width: 100%;
+    max-width: 512px; 
+}
+
+
+.brand-logo {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15.82px;            
+    width: 188.5px;          
+    height: 58px;            
+    margin: 0 auto 32px auto; 
+    opacity: 1;
+}
+
+.brand-logo img {
+  height: 100%; 
+    object-fit: contain;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 32px;
+
+}
+
+.form-header h1 {
+    font-size: 35px;
+   color: #333333;
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-style: bold;
+}
+
+.form-header p {
+    font-size: 13px;
+    color: #64748B;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;            
+    width: 100%;         
+    height: 85px;       
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #264653;
+}
+
+.input-group input[type="email"],
+.password-wrapper input {
+  flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    background-color:#F0925C0D; 
+    border: none;
+    border-radius: 12px; 
+    font-size: 13px;
+    color: #26465380;
+    outline: none;
+    width: 100%;           
+    height: 53px;          
+    padding: 0 16px;       
+    
+    background-color: #fff6f2; 
+    
+    
+    border-radius: 999px;  
+    border: 1.34px solid #e5e5e5; 
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    box-sizing: border-box; 
+
+}
+
+
+.input-group input::placeholder {
+    color: #b5b5b5;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.hide-password {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.hide-password img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.reset-password {
+    width: 512px ;
+    height: 56px;
+    gap: 8px;
+    top: 8px;
+    right: 16px;
+    bottom: 8px;
+    left: 16px;
+    background: linear-gradient(180deg, #E76F51 0%, #F4A261 100%);
+  box-shadow: 0px 4px 14px 0px #E76F5166;
+  
+  
+  color: #ffffff; 
+  border: none; 
+  padding: 12px 32px; 
+  font-size: 16px;
+  font-weight: 600; 
+  border-radius: 999px; 
+  cursor: pointer; 
+ 
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px 0px #E76F5188;
+}
+
+.divider {
+    text-align: center;
+    margin: 24px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: 1;
+}
+
+.divider span {
+    background-color: #ffffff;
+    padding: 0 12px;
+    color: #999999;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.form-footer {
+    text-align: center;
+}
+
+.form-footer p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.form-footer a {
+    color: #f17b51;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+}
+@media (max-width: 992px) {
+    .login-container {
+        width: 95%;
+        max-width: 900px;
+        height: auto;
+        min-height: 800px;
+    }
+    
+    .visual-section {
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        flex: 0.8;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .login-container {
+        flex-direction: column; 
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .visual-section {
+        width: 100%;
+        height: 280px; 
+        top: 0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+    }
+
+    .submit-btn {
+        width: 100% ; 
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 0;
+    }
+
+    .login-container {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .visual-section {
+        height: 220px;
+        border-radius: 0;
+    }
+
+    .form-section {
+        padding: 24px 16px;
+    }
+
+    .form-header h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .visual-section {
+        height: 180px;
+    }
+
+    .form-section {
+        padding: 20px 12px;
+    }
+
+    .form-header h1 {
+        font-size: 24px;
+    }
+
+    .form-header p {
+        font-size: 11px;
+    }
+
+    
+
+    .submit-btn {
+        height: 48px;
+        font-size: 15px;
+    }
+
+ 
+}
